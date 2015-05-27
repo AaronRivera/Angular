@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="forms">
+  <head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	
+	<script>
+		<!-- Angular code goes here -->
+		var app = angular.module('forms', []);
+		
+	</script>
+	<style>
+		.strike { text-decoration: line-through;}
+		.ng-dirty.ng-invalid { border-color:red;}
+		.ng-dirty.ng-valid {border-color: green;}
+	</style>
+  </head>
+
+  <body ng-controller="todoController as todoCtrl">
+    <div class="container">
+		<h2>To Do List</h2>
+		<ul class="list-unstyled">
+			<li>
+				<input type="checkbox" >
+				<span>Do something</span>
+			</li>
+		</ul>
+		
+		<form name="todoForm" >
+	
+			<input type="text" placeholder="Hey... do this"/>
+			
+			<input type="submit" value="Save"/>
+	
+		</form>
+   
+	</div>
+  </body>
+</html>

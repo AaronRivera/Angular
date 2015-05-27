@@ -9,21 +9,21 @@
 	  var app = angular.module('TabsAndCarousel', []);
 
 	  app.controller('TabController', function(){
-		this.tab = 1;
+		this.tab = 1; //this is the current tab to display
 		 this.setTab = function(newValue){
-		  //set the tab value to the newValue
+		  //set the tab property to the newValue
 		};
 
 		this.isSet = function(tabName){
-		  //return if the tab parameter matches the current tab. 
+		  //return if the tabName argument matches the current tab property. 
 		};
 	  });
 	  
 	  app.controller('CarouselController', function() {
-			this.current = 0;
-			this.getNext = function() { };
-			this.getPrev = function() { };
-			this.images = imageArray;
+			this.current = 0; //current image index
+			this.getNext = function() { }; //function to cycle forwards through the images 
+			this.getPrev = function() { }; //function to cycle backwards through the images
+			this.images = imageArray; //the array holding the images
 		});
 		
 		var imageArray = [
